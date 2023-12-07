@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="miniBank.css" />
+    <title>miniBank</title>
+  </head>
+  <body>
+    <nav class="navigator">
+      <p class="Welcome">Log in to get started</p>
+      <!-- <p class="Welcome">ib 1111 or gu 1111 to login</p> -->
+      <form class="Login">
+        <input
+          type="text"
+          placeholder="user"
+          class="LoginInput LoginInputUser"
+        />
+        <input
+          type="text"
+          placeholder="PIN"
+          maxlength="4"
+          class="LoginInput LoginInputPin"
+        />
+        <button class="LoginBtn">&rarr;</button>
+      </form>
+    </nav>
+
+    <img src="./img/—Pngtree—log in login interface computer_3945571.png" alt="">
+    <main class="App">
+      <div class="Balance">
+        <div>
+          <p class="BalanceLabel">Current balance</p>
+          <p class="BalanceDate">
+            As of <span class="Date">05/03/2037</span>
+          </p>
+        </div>
+        <p class="BalanceValue">0000€</p>
+      </div>
+      <div class="Movements">
+        <div class="MovementsRow">
+          <div class="MovementsType MovementsTypeDeposit">2 deposit</div>
+          <div class="MovementsDate">3 days ago</div>
+          <div class="MovementsValue">4 000€</div>
+        </div>
+        <div class="MovementsRow">
+          <div class="MovementsType MovementsTypeWithdrawal">
+            1 withdrawal
+          </div>
+          <div class="MovementsDate">24/01/2037</div>
+          <div class="MovementsValue">-378€</div>
+        </div>
+      </div>
+      <div class="Summary">
+        <p class="SummaryLabel">In</p>
+        <p class="SummaryValue SummaryValueIn">0000€</p>
+        <p class="SummaryLabel">Out</p>
+        <p class="SummaryValue SummaryValueOut">0000€</p>
+        <p class="SummaryLabel">Interest</p>
+        <p class="SummaryValue SummaryValueInterest">0000€</p>
+        <button class="BtnSort">&downarrow; SORT</button>
+      </div>
+      <div class="Operation OperationTransfer">
+        <h2>Transfer money</h2>
+        <form class="Form FormTransfer">
+          <input type="text" class="FormInput FormInputTo" />
+          <input type="Number" class="FormInput FormInputAmount" />
+          <button class="FormBtn FormBtnTransfer">&rarr;</button>
+          <label class="FormLabel">Transfer to</label>
+          <label class="FormLabel">Amount</label>
+        </form>
+      </div>
+      <div class="Operation OperationLoan">
+        <h2>Request loan</h2>
+        <form class="Form FormLoan">
+          <input type="Number" class="FormInput FormInputLoanAmount" />
+          <button class="FormBtn FormBtnLoan">&rarr;</button>
+          <label class="FormLabel FormLabelLoan">Amount</label>
+        </form>
+      </div>
+      <div class="Operation OperationClose">
+        <h2>Close account</h2>
+        <form class="Form FormClose">
+          <input type="text" class="FormInput FormInputUser" />
+          <input
+            type="password"
+            maxlength="6"
+            class="FormInput FormInputPin"
+          />
+          <button class="FormBtn FormBtnClose">&rarr;</button>
+          <label class="FormLabel">Confirm user</label>
+          <label class="FormLabel">Confirm PIN</label>
+        </form>
+      </div>
+      <p class="LogoutTimer">
+        You will be logged out in <span class="Timer">05:00</span>
+      </p>
+    </main>
+    <script src="script.js"></script>
+    <script src="miniBank.js"></script>
+  </body>
+</html>
